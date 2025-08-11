@@ -55,7 +55,7 @@ const Index = () => {
         <div className="container mx-auto px-6 py-4 flex items-center justify-between">
           <a href="/" className="flex items-center gap-2" aria-label="Solver - Página inicial">
             <img
-              src="/lovable-uploads/6ffee945-8368-458d-a3c8-6d3b3ef96071.png"
+              src="/lovable-uploads/42a1d000-ed15-4919-b0fe-35553c2e5d5c.png"
               alt="Solver Marketing Digital - Logo"
               className="h-8 w-auto"
               loading="eager"
@@ -332,7 +332,7 @@ const Index = () => {
         <div className="container mx-auto px-6 py-10 grid md:grid-cols-3 gap-8 items-center">
           <div className="flex items-center gap-2">
             <img
-              src="/lovable-uploads/6ffee945-8368-458d-a3c8-6d3b3ef96071.png"
+              src="/lovable-uploads/42a1d000-ed15-4919-b0fe-35553c2e5d5c.png"
               alt="Solver Marketing Digital - Logo"
               className="h-7 w-auto"
               loading="lazy"
