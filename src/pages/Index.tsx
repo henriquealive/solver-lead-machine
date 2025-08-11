@@ -81,7 +81,7 @@ const Index = () => {
         <section className="relative">
           <div className="container mx-auto px-6 py-16 md:py-24 grid md:grid-cols-2 gap-10 items-center">
             <div className="space-y-6">
-              <h1 className="font-heading text-4xl md:text-5xl leading-tight">
+              <h1 className="font-heading text-primary text-4xl md:text-5xl leading-tight">
                 Transformamos negócios comuns em máquinas de vendas.
               </h1>
               <p className="text-lg text-muted-foreground">
@@ -160,7 +160,7 @@ const Index = () => {
         <section id="problemas" className="py-16 md:py-24">
           <div className="container mx-auto px-6">
             <div className="max-w-3xl mb-10">
-              <h2 className="font-heading text-3xl md:text-4xl">Problemas que resolvemos</h2>
+              <h2 className="font-heading text-primary text-3xl md:text-4xl">Problemas que resolvemos</h2>
               <p className="text-muted-foreground mt-3">
                 Enquanto muitos falam sobre resultados, nós os entregamos.
               </p>
@@ -188,7 +188,7 @@ const Index = () => {
         <section id="solucoes" className="py-16 md:py-24 bg-secondary/60 border-y">
           <div className="container mx-auto px-6">
             <div className="max-w-3xl mb-10">
-              <h2 className="font-heading text-3xl md:text-4xl">O que fazemos e como fazemos</h2>
+              <h2 className="font-heading text-primary text-3xl md:text-4xl">O que fazemos e como fazemos</h2>
               <p className="text-muted-foreground mt-3">
                 Combinamos estratégia, criatividade e dados para atrair as pessoas certas e transformar interesse em vendas.
               </p>
@@ -214,7 +214,7 @@ const Index = () => {
         <section id="diferenciais" className="py-16 md:py-24">
           <div className="container mx-auto px-6">
             <div className="max-w-3xl mb-10">
-              <h2 className="font-heading text-3xl md:text-4xl">Diferenciais da Solver</h2>
+              <h2 className="font-heading text-primary text-3xl md:text-4xl">Diferenciais da Solver</h2>
               <p className="text-muted-foreground mt-3">Foco total no que importa: o crescimento do seu negócio.</p>
             </div>
             <div className="grid md:grid-cols-3 gap-6">
@@ -237,7 +237,7 @@ const Index = () => {
         <section id="beneficios" className="py-16 md:py-24 bg-secondary/60 border-y">
           <div className="container mx-auto px-6">
             <div className="max-w-3xl mb-10">
-              <h2 className="font-heading text-3xl md:text-4xl">Benefícios para o seu negócio</h2>
+              <h2 className="font-heading text-primary text-3xl md:text-4xl">Benefícios para o seu negócio</h2>
             </div>
             <div className="grid md:grid-cols-2 gap-6">
               {[
@@ -259,7 +259,7 @@ const Index = () => {
         <section id="resultados" className="py-16 md:py-24">
           <div className="container mx-auto px-6 grid lg:grid-cols-2 gap-10 items-center">
             <div>
-              <h2 className="font-heading text-3xl md:text-4xl">Prova de resultado</h2>
+              <h2 className="font-heading text-primary text-3xl md:text-4xl">Prova de resultado</h2>
               <p className="text-muted-foreground mt-3">
                 Cases reais, números concretos. Relatórios que você entende e acompanha.
               </p>
@@ -292,7 +292,7 @@ const Index = () => {
         <section id="objeções" className="py-16 md:py-24 bg-secondary/60 border-y">
           <div className="container mx-auto px-6">
             <div className="max-w-3xl mb-10">
-              <h2 className="font-heading text-3xl md:text-4xl">Sem enrolação, respostas diretas</h2>
+              <h2 className="font-heading text-primary text-3xl md:text-4xl">Sem enrolação, respostas diretas</h2>
             </div>
             <div className="grid md:grid-cols-2 gap-6">
               {[
@@ -313,7 +313,7 @@ const Index = () => {
         {/* CTA Final */}
         <section className="py-16 md:py-24">
           <div className="container mx-auto px-6 text-center max-w-3xl">
-            <h2 className="font-heading text-3xl md:text-4xl">Pronto para vender mais?</h2>
+            <h2 className="font-heading text-primary text-3xl md:text-4xl">Pronto para vender mais?</h2>
             <p className="text-muted-foreground mt-3">
               Fale agora com a Solver pelo WhatsApp e entenda como vamos acelerar seu crescimento.
             </p>
