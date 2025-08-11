@@ -53,10 +53,15 @@ const Index = () => {
 
       <header className="sticky top-0 z-40 bg-background/80 backdrop-blur supports-[backdrop-filter]:bg-background/80 border-b">
         <div className="container mx-auto px-6 py-4 flex items-center justify-between">
-          <div className="flex items-center gap-2">
-            <div className="h-8 w-8 rounded-md bg-gradient-to-tr from-primary to-[hsl(var(--primary-glow))]" aria-hidden />
-            <span className="font-heading text-xl">Solver</span>
-          </div>
+          <a href="/" className="flex items-center gap-2" aria-label="Solver - Página inicial">
+            <img
+              src="/lovable-uploads/6ffee945-8368-458d-a3c8-6d3b3ef96071.png"
+              alt="Solver Marketing Digital - Logo"
+              className="h-8 w-auto"
+              loading="eager"
+              decoding="async"
+            />
+          </a>
           <div className="hidden md:flex items-center gap-6 text-sm text-muted-foreground">
             <a href="#solucoes" className="story-link">Soluções</a>
             <a href="#diferenciais" className="story-link">Diferenciais</a>
@@ -87,9 +92,6 @@ const Index = () => {
                   <a href={WHATSAPP_LINK} target="_blank" rel="noopener noreferrer">
                     Clique aqui e fale agora pelo WhatsApp!
                   </a>
-                </Button>
-                <Button variant="outline" size="xl" className="hover-scale" asChild>
-                  <a href="#solucoes">Quero aumentar minhas vendas agora!</a>
                 </Button>
               </div>
               <div className="grid grid-cols-2 sm:grid-cols-4 gap-6 pt-6">
@@ -329,8 +331,13 @@ const Index = () => {
       <footer className="border-t">
         <div className="container mx-auto px-6 py-10 grid md:grid-cols-3 gap-8 items-center">
           <div className="flex items-center gap-2">
-            <div className="h-7 w-7 rounded-md bg-gradient-to-tr from-primary to-[hsl(var(--primary-glow))]" aria-hidden />
-            <span className="font-heading text-lg">Solver</span>
+            <img
+              src="/lovable-uploads/6ffee945-8368-458d-a3c8-6d3b3ef96071.png"
+              alt="Solver Marketing Digital - Logo"
+              className="h-7 w-auto"
+              loading="lazy"
+              decoding="async"
+            />
           </div>
           <div className="text-sm text-muted-foreground">© {new Date().getFullYear()} Solver. Todos os direitos reservados.</div>
           <div className="flex justify-start md:justify-end gap-4 text-sm">
