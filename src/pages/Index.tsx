@@ -82,10 +82,13 @@ const Index = () => {
           <div className="container mx-auto px-6 py-16 md:py-24 grid md:grid-cols-2 gap-10 items-center">
             <div className="space-y-6">
               <h1 className="font-heading text-primary text-4xl md:text-5xl leading-tight">
-                Transformamos negócios comuns em máquinas de vendas.
+                Transformamos empresas comuns em máquinas de vendas
               </h1>
               <p className="text-lg text-muted-foreground">
-                Acreditamos que cada negócio tem uma história única. Combinamos estratégia, criatividade e dados para atrair as pessoas certas e transformar interesse em vendas.
+                Acreditamos que cada negócio tem uma história única e a nossa missão é fazer a sua ser vista, lembrada e escolhida. Combinamos estratégia, criatividade e dados para atrair as pessoas certas e transformar interesse em vendas. Enquanto você foca no que faz de melhor - atender e encantar seus clientes - nós cuidamos de tudo: do tráfego pago ao fortalecimento da sua marca.
+              </p>
+              <p className="text-lg text-primary font-semibold">
+                👉 Mais visibilidade. Mais clientes. Mais crescimento.
               </p>
               <div className="flex flex-col sm:flex-row gap-4">
                 <Button asChild variant="hero" size="xl" aria-label="Clique e fale agora pelo WhatsApp" className="hover-scale">
@@ -165,18 +168,41 @@ const Index = () => {
                 Enquanto muitos falam sobre resultados, nós os entregamos.
               </p>
             </div>
-            <div className="grid md:grid-cols-2 gap-6">
+            <div className="space-y-6">
               {[
-                { icon: AlertTriangle, title: "Falta de constância nas redes sociais" },
-                { icon: Megaphone, title: "Baixa geração de leads" },
-                { icon: Target, title: "Perda de mercado para concorrentes" },
-                { icon: Users, title: "Falta de engajamento e relevância" },
-              ].map(({ icon: Icon, title }) => (
-                <article key={title} className="flex items-start gap-4 p-5 rounded-lg border bg-card">
-                  <Icon className="text-primary" />
-                  <div>
-                    <h3 className="font-semibold">{title}</h3>
-                    <p className="text-sm text-muted-foreground">Resolvemos com estratégia, conteúdo e tráfego pago orientados a dados.</p>
+                { 
+                  icon: TrendingUp, 
+                  title: "🔹 Marketing que não dá retorno", 
+                  desc: "Você não precisa gastar mais. Precisa investir melhor. Analisamos dados, cortamos desperdícios e criamos campanhas otimizadas em tempo real." 
+                },
+                { 
+                  icon: AlertTriangle, 
+                  title: "🔹 Falta de constância nas redes sociais", 
+                  desc: "Quem não aparece, é esquecido. Mantemos sua marca ativa, estratégica e irresistível para que o público pense em você antes da concorrência." 
+                },
+                { 
+                  icon: Megaphone, 
+                  title: "🔹 Baixa geração de leads", 
+                  desc: "Sem leads, não há crescimento. Criamos estratégias avançadas para capturar clientes qualificados e escalar suas vendas." 
+                },
+                { 
+                  icon: Target, 
+                  title: "🔹 Perda de mercado para concorrentes", 
+                  desc: "Cada dia sem presença digital é uma fatia do mercado perdida. Reconquistamos seu espaço e posicionamos sua marca como referência no nicho." 
+                },
+                { 
+                  icon: Users, 
+                  title: "🔹 Engajamento fraco e falta de relevância", 
+                  desc: "Chega de postar para o vazio. Criamos conteúdos e campanhas que geram desejo, engajam seu público e transformam seguidores em clientes fiéis." 
+                },
+              ].map(({ icon: Icon, title, desc }) => (
+                <article key={title} className="p-6 rounded-lg border bg-card">
+                  <div className="flex items-start gap-4">
+                    <Icon className="text-primary shrink-0 mt-1" />
+                    <div>
+                      <h3 className="font-semibold mb-2">{title}</h3>
+                      <p className="text-sm text-muted-foreground">{desc}</p>
+                    </div>
                   </div>
                 </article>
               ))}
@@ -188,21 +214,29 @@ const Index = () => {
         <section id="solucoes" className="py-16 md:py-24 bg-secondary/60 border-y">
           <div className="container mx-auto px-6">
             <div className="max-w-3xl mb-10">
-              <h2 className="font-heading text-primary text-3xl md:text-4xl">O que fazemos e como fazemos</h2>
-              <p className="text-muted-foreground mt-3">
-                Combinamos estratégia, criatividade e dados para atrair as pessoas certas e transformar interesse em vendas.
-              </p>
+              <h2 className="font-heading text-primary text-3xl md:text-4xl">O que fazemos</h2>
             </div>
-            <div className="grid md:grid-cols-4 gap-6">
+            <div className="grid md:grid-cols-3 gap-6">
               {[
-                { icon: Target, title: "Estratégia", desc: "Diagnóstico do nicho e posicionamento" },
-                { icon: Megaphone, title: "Tráfego Pago", desc: "Campanhas que geram vendas de verdade" },
-                { icon: LineChart, title: "Conteúdo", desc: "Autoridade e relevância nas redes" },
-                { icon: BarChart3, title: "Otimização", desc: "Testes, métricas e melhoria contínua" },
+                { 
+                  icon: Megaphone, 
+                  title: "✨ Tráfego Pago de Alta Performance", 
+                  desc: "Não é apenas anúncio. É posicionamento estratégico no momento certo, diante do público certo. Segmentação avançada, otimização contínua e ROI positivo." 
+                },
+                { 
+                  icon: LineChart, 
+                  title: "✨ Conteúdo Inteligente", 
+                  desc: "Estudamos o seu nicho, entendemos seu público e criamos conteúdos que comunicam, conectam e convertem. Sua marca será vista, lembrada e respeitada." 
+                },
+                { 
+                  icon: BarChart3, 
+                  title: "✨ Otimização Total", 
+                  desc: "Cada detalhe importa. Analisamos sites, anúncios e funis para transformar visitantes em clientes reais, com testes e métricas que maximizam conversões." 
+                },
               ].map(({ icon: Icon, title, desc }) => (
                 <article key={title} className="p-6 rounded-lg bg-card border hover-scale">
                   <Icon className="text-primary mb-4" />
-                  <h3 className="font-semibold mb-1">{title}</h3>
+                  <h3 className="font-semibold mb-2">{title}</h3>
                   <p className="text-sm text-muted-foreground">{desc}</p>
                 </article>
               ))}
@@ -214,21 +248,24 @@ const Index = () => {
         <section id="diferenciais" className="py-16 md:py-24">
           <div className="container mx-auto px-6">
             <div className="max-w-3xl mb-10">
-              <h2 className="font-heading text-primary text-3xl md:text-4xl">Diferenciais da Solver</h2>
-              <p className="text-muted-foreground mt-3">Foco total no que importa: o crescimento do seu negócio.</p>
+              <h2 className="font-heading text-primary text-3xl md:text-4xl">Por que escolher a Solver?</h2>
+              <p className="text-muted-foreground mt-3">Na Solver, cada ação tem um propósito: gerar impacto direto no seu negócio. Existe sempre um "antes" e "depois" de trabalhar conosco.</p>
             </div>
-            <div className="grid md:grid-cols-3 gap-6">
+            <div className="space-y-4">
               {[
-                { icon: ShieldCheck, title: "Transparência", desc: "Relatórios claros e acompanhamentos frequentes" },
-                { icon: TrendingUp, title: "Resultados", desc: "Impacto real no faturamento, não vaidade" },
-                { icon: MessageCircle, title: "Suporte", desc: "Atendimento próximo e consultivo" },
-              ].map(({ icon: Icon, title, desc }) => (
-                <article key={title} className="p-6 rounded-lg bg-card border">
-                  <Icon className="text-primary mb-4" />
-                  <h3 className="font-semibold mb-1">{title}</h3>
-                  <p className="text-sm text-muted-foreground">{desc}</p>
-                </article>
+                "🔹 Não prometemos, entregamos.",
+                "🔹 Transformamos cliques em clientes e ideias em faturamento.",
+                "🔹 Consultoria personalizada, estratégias únicas, resultados reais.",
+              ].map((item) => (
+                <div key={item} className="p-6 rounded-lg bg-card border">
+                  <p className="font-semibold text-lg">{item}</p>
+                </div>
               ))}
+              <div className="mt-8 p-6 rounded-lg bg-primary/10 border border-primary/20">
+                <p className="text-center text-lg font-semibold text-primary">
+                  📌 Com a Solver, você será visto, lembrado e nunca mais esquecido.
+                </p>
+              </div>
             </div>
           </div>
         </section>
@@ -313,9 +350,12 @@ const Index = () => {
         {/* CTA Final */}
         <section className="py-16 md:py-24">
           <div className="container mx-auto px-6 text-center max-w-3xl">
-            <h2 className="font-heading text-primary text-3xl md:text-4xl">Pronto para vender mais?</h2>
+            <h2 className="font-heading text-primary text-3xl md:text-4xl">Próximos passos</h2>
             <p className="text-muted-foreground mt-3">
-              Fale agora com a Solver pelo WhatsApp e entenda como vamos acelerar seu crescimento.
+              Seu crescimento começa agora.
+            </p>
+            <p className="text-lg text-primary font-semibold mt-2">
+              👉 Clique aqui e fale direto com nossa equipe no WhatsApp.
             </p>
             <div className="mt-6 flex justify-center">
               <Button asChild variant="hero" size="xl" aria-label="Falar com a Solver no WhatsApp" className="hover-scale">
