@@ -85,10 +85,12 @@ const Index = () => {
                 Transformamos empresas comuns em máquinas de vendas
               </h1>
               <p className="text-lg text-muted-foreground">
-                Acreditamos que cada negócio tem uma história única e a nossa missão é fazer a sua ser vista, lembrada e escolhida. Combinamos estratégia, criatividade e dados para atrair as pessoas certas e transformar interesse em vendas. Enquanto você foca no que faz de melhor - atender e encantar seus clientes - nós cuidamos de tudo: do tráfego pago ao fortalecimento da sua marca.
+                Cada negócio tem uma história única e nossa missão é fazer o seu ser visto, lembrado e escolhido.
+                Combinamos estratégia, criatividade e dados para atrair clientes e transformar interesse em vendas.
+                Você cuida dos seus clientes, nós cuidamos do seu crescimento.
               </p>
               <p className="text-lg text-primary font-semibold">
-                👉 Mais visibilidade. Mais clientes. Mais crescimento.
+                Mais visibilidade. Mais clientes. Mais faturamento.
               </p>
               <div className="flex flex-col sm:flex-row gap-4">
                 <Button asChild variant="hero" size="xl" aria-label="Clique e fale agora pelo WhatsApp" className="hover-scale">
@@ -172,28 +174,28 @@ const Index = () => {
               {[
                 { 
                   icon: TrendingUp, 
-                  title: "🔹 Marketing que não dá retorno", 
-                  desc: "Você não precisa gastar mais. Precisa investir melhor. Analisamos dados, cortamos desperdícios e criamos campanhas otimizadas em tempo real." 
+                  title: "Marketing sem retorno: investimos melhor, não mais.", 
+                  desc: "" 
                 },
                 { 
                   icon: AlertTriangle, 
-                  title: "🔹 Falta de constância nas redes sociais", 
-                  desc: "Quem não aparece, é esquecido. Mantemos sua marca ativa, estratégica e irresistível para que o público pense em você antes da concorrência." 
+                  title: "Falta de constância: sua marca sempre ativa e presente.", 
+                  desc: "" 
                 },
                 { 
                   icon: Megaphone, 
-                  title: "🔹 Baixa geração de leads", 
-                  desc: "Sem leads, não há crescimento. Criamos estratégias avançadas para capturar clientes qualificados e escalar suas vendas." 
+                  title: "Poucos leads: atraímos clientes qualificados todos os dias.", 
+                  desc: "" 
                 },
                 { 
                   icon: Target, 
-                  title: "🔹 Perda de mercado para concorrentes", 
-                  desc: "Cada dia sem presença digital é uma fatia do mercado perdida. Reconquistamos seu espaço e posicionamos sua marca como referência no nicho." 
+                  title: "Concorrência dominando: recolocamos sua empresa no topo.", 
+                  desc: "" 
                 },
                 { 
                   icon: Users, 
-                  title: "🔹 Engajamento fraco e falta de relevância", 
-                  desc: "Chega de postar para o vazio. Criamos conteúdos e campanhas que geram desejo, engajam seu público e transformam seguidores em clientes fiéis." 
+                  title: "Engajamento fraco: criamos conteúdos que geram desejo e vendas.", 
+                  desc: "" 
                 },
               ].map(({ icon: Icon, title, desc }) => (
                 <article key={title} className="p-6 rounded-lg border bg-card">
@@ -201,7 +203,7 @@ const Index = () => {
                     <Icon className="text-primary shrink-0 mt-1" />
                     <div>
                       <h3 className="font-semibold mb-2">{title}</h3>
-                      <p className="text-sm text-muted-foreground">{desc}</p>
+                      {desc && <p className="text-sm text-muted-foreground">{desc}</p>}
                     </div>
                   </div>
                 </article>
@@ -220,18 +222,18 @@ const Index = () => {
               {[
                 { 
                   icon: Megaphone, 
-                  title: "✨ Tráfego Pago de Alta Performance", 
-                  desc: "Não é apenas anúncio. É posicionamento estratégico no momento certo, diante do público certo. Segmentação avançada, otimização contínua e ROI positivo." 
+                  title: "Tráfego Pago de Alta Performance", 
+                  desc: "Campanhas estratégicas que posicionam sua marca no momento certo, diante do público certo, com ROI positivo." 
                 },
                 { 
                   icon: LineChart, 
-                  title: "✨ Conteúdo Inteligente", 
-                  desc: "Estudamos o seu nicho, entendemos seu público e criamos conteúdos que comunicam, conectam e convertem. Sua marca será vista, lembrada e respeitada." 
+                  title: "Conteúdo Inteligente", 
+                  desc: "Posts e campanhas que comunicam, conectam e convertem, tornando sua marca respeitada no mercado." 
                 },
                 { 
                   icon: BarChart3, 
-                  title: "✨ Otimização Total", 
-                  desc: "Cada detalhe importa. Analisamos sites, anúncios e funis para transformar visitantes em clientes reais, com testes e métricas que maximizam conversões." 
+                  title: "Otimização Total", 
+                  desc: "Ajustamos cada detalhe para transformar visitantes em clientes reais e multiplicar resultados." 
                 },
               ].map(({ icon: Icon, title, desc }) => (
                 <article key={title} className="p-6 rounded-lg bg-card border hover-scale">
@@ -253,9 +255,9 @@ const Index = () => {
             </div>
             <div className="space-y-4">
               {[
-                "🔹 Não prometemos, entregamos.",
-                "🔹 Transformamos cliques em clientes e ideias em faturamento.",
-                "🔹 Consultoria personalizada, estratégias únicas, resultados reais.",
+                "Não prometemos: entregamos.",
+                "Transformamos cliques em clientes e ideias em faturamento.",
+                "Estratégias personalizadas, com resultados reais.",
               ].map((item) => (
                 <div key={item} className="p-6 rounded-lg bg-card border">
                   <p className="font-semibold text-lg">{item}</p>
@@ -263,7 +265,7 @@ const Index = () => {
               ))}
               <div className="mt-8 p-6 rounded-lg bg-primary/10 border border-primary/20">
                 <p className="text-center text-lg font-semibold text-primary">
-                  📌 Com a Solver, você será visto, lembrado e nunca mais esquecido.
+                  Com a Solver, você será visto, lembrado e nunca mais esquecido.
                 </p>
               </div>
             </div>
@@ -355,7 +357,7 @@ const Index = () => {
               Seu crescimento começa agora.
             </p>
             <p className="text-lg text-primary font-semibold mt-2">
-              👉 Clique aqui e fale direto com nossa equipe no WhatsApp.
+              Clique aqui e fale com nossa equipe no WhatsApp.
             </p>
             <div className="mt-6 flex justify-center">
               <Button asChild variant="hero" size="xl" aria-label="Falar com a Solver no WhatsApp" className="hover-scale">
