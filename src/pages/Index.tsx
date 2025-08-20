@@ -55,8 +55,8 @@ const Index = () => {
         <div className="container mx-auto px-6 py-4 flex items-center justify-between">
           <a href="/" className="flex items-center gap-2" aria-label="Solver - Página inicial">
             <img
-              src="/lovable-uploads/42a1d000-ed15-4919-b0fe-35553c2e5d5c.png"
-              alt="Solver Marketing Digital - Logo"
+              src="/lovable-uploads/d5198dda-99fe-496f-8999-f2c8c518e99b.png"
+              alt="Logo of"
               className="h-8 w-auto"
               loading="eager"
               decoding="async"
@@ -371,15 +371,20 @@ const Index = () => {
       </main>
 
       <footer className="border-t">
-        <div className="container mx-auto px-6 py-10 grid md:grid-cols-3 gap-8 items-center">
+        <div className="container mx-auto px-6 py-10 grid md:grid-cols-4 gap-8 items-center">
           <div className="flex items-center gap-2">
             <img
-              src="/lovable-uploads/42a1d000-ed15-4919-b0fe-35553c2e5d5c.png"
-              alt="Solver Marketing Digital - Logo"
+              src="/lovable-uploads/d5198dda-99fe-496f-8999-f2c8c518e99b.png"
+              alt="Logo of"
               className="h-7 w-auto"
               loading="lazy"
               decoding="async"
             />
+          </div>
+          <div className="text-sm text-muted-foreground">
+            <a href="mailto:neres@teamsolvers.com.br" className="story-link">
+              neres@teamsolvers.com.br
+            </a>
           </div>
           <div className="text-sm text-muted-foreground">© {new Date().getFullYear()} Solver. Todos os direitos reservados.</div>
           <div className="flex justify-start md:justify-end gap-4 text-sm">
